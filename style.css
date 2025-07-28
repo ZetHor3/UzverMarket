@@ -1,0 +1,117 @@
+/* Основной стиль */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Хэдер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.logo span {
+    color: #FFD700;
+}
+
+/* Навигация */
+.nav-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-btn:hover {
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 150px 20px 100px;
+}
+.hero h2 {
+    font-size: 3em;
+}
+.hero h2 span {
+    color: #FFD700;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.glow-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #FFD700;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px #FFD700, 0 0 40px #FFD700;
+    transition: 0.3s;
+}
+.glow-btn:hover {
+    box-shadow: 0 0 25px #FFD700, 0 0 60px #FFD700;
+    transform: scale(1.05);
+}
+
+/* FAQ */
+.faq {
+    padding: 80px 10%;
+    background: #111;
+}
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+.faq-item h3 {
+    color: #FFD700;
+}
+.faq-item p {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    .glow-btn {
+        font-size: 1em;
+    }
+}
